@@ -1,0 +1,14 @@
+{
+  "name": "extensao-chrome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mateus da silveira",
+  "license": "ISC",
+  "dependencies": {
+    "node-modules": "^0.0.1"
+  }
+}

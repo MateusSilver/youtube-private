@@ -1,0 +1,26 @@
+form {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+form, input{
+    background-color: #0f0f11;
+    color: #fff;
+}
+
+input {
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    outline: none;
+    width: 100%;
+    margin-top: 4px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.input:hover {
+    background-color: #ff0000;
+}
