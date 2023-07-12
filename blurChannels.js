@@ -1,6 +1,6 @@
-const form1 = document.querySelector('.form2');
-console.log('using titles');
-form1.addEventListener('submit', async (event) => {
+const form2 = document.querySelector('#form2');
+
+form2.addEventListener('submit', async (event) => {
     event.preventDefault();
     const [tab] = await chrome.tabs.query({active: true, currentWindow: true});
 
@@ -11,11 +11,10 @@ form1.addEventListener('submit', async (event) => {
 });
 
 const blurChannel = () => {
-    console.log('entrou');
-    
-    var titles = document.querySelectorAll(".yt-simple-endpoint.style-scope.yt-formatted-string");
-    for(var i=0; i<titles.length; i++){
-        titles[i].innerHTML = "********";
+    var channelName = document.querySelectorAll(".style-scope.ytd-channel-name");
+
+    for(var i=0; i<channelName.length; i++){
+        channelName[i].innerHTML = "---------";
     }
 
 }
