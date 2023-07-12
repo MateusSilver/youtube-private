@@ -12,9 +12,5 @@ form2.addEventListener('submit', async (event) => {
 
 const blurChannel = () => {
     var channelName = document.querySelectorAll(".style-scope.ytd-channel-name");
-
-    for(var i=0; i<channelName.length; i++){
-        channelName[i].innerHTML = "---------";
-    }
-
+    channelName.forEach((name) => name.innerHTML = "--------");
 }

@@ -12,9 +12,5 @@ form1.addEventListener('submit', async (event) => {
 
 const blurTitles = () => {
     var titles = document.querySelectorAll(".yt-simple-endpoint.focus-on-expand.style-scope.ytd-rich-grid-media");
-    
-    for(var i=0; i<titles.length; i++){
-        titles[i].innerHTML = "********";
-    }
-
+    titles.forEach((title) => title.innerHTML = "********");
 }
